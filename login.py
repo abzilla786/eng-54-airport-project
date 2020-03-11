@@ -1,8 +1,7 @@
-from pip._vendor.distlib.compat import raw_input
 import stdiomask
 
 
-class Login:
+class login:
 
     def __init__(self, id, password):
         self.id = id
@@ -12,9 +11,17 @@ class Login:
     def check(self):
         if (self.id == log_id and self.password == log_pass):
             print("Login successful")
+        elif (self.id != log_id and self.password != log_pass):
+            print(self.error)
+            try_again = input('Would you like to try again (Y/N): ')
+            if try_again == 'N':
+                print('Goodbye')
+                loop = False
+            else:
+                pass
 
 
-log = Login("admin", "admin")
+log = login("admin", "admin")
 log_id = input("Enter your user ID: ")
 log_pass = stdiomask.getpass("Enter password: ")
 log.check()
