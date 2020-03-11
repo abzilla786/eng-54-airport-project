@@ -1,0 +1,11 @@
+def print_menu():  ## Your menu design here
+    print(30 * "-", "MENU", 30 * "-")
+    print("1. Create student")
+    print("2. Create Teacher")
+    print("3. Create Workshop")
+    print("4. Add Skills for students")
+    print("5. View Student list")
+    print("6. View Teachers list")
+    print("7. View Workshop list")
+    print("8. Exit")
+    print(67 * "-")
