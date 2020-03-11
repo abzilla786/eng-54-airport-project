@@ -1,0 +1,4 @@
+# people class
+
+# attributes:
+# name
